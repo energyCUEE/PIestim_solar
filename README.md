@@ -57,5 +57,9 @@ This repository is structured as follows:
 - `experiment` includes all experiment corresponding codes and datasets utilized in Section 6 of the article.
 - The `paper_figure` folder contains the figures used in this article along with the code for generating them ([**visualization.ipynb**](./paper_figure/visualization.ipynb)).
 - `data` folder consists of the dataset using in the experiment as  .csv and .pkl format.
-	- [**preprocessing.ipynb**](./data/preprocessing.ipynb)) 
+	- [**preprocessing.ipynb**](./data/preprocessing.ipynb) demonstrates the preprocessing of the raw dataset into a format suitable for training a neural network.
+ 	- `GHI_CI_NCEP_Iclr_15min_DeDe2023_newiclr.csv` includes the measured irradaince from DeDe dataset (48 stations), cloud data, NCEP forecast data, clear-sky irradiance in 15-minute resolution with completed time index
+  	- `DeDe_48sites_metadata.csv` provides details for each solar station.
+  	- `data_central_completeddatetime_equallag_smoothsplit.pkl` contains three dataframes: df_train, df_val, and df_test, which were obtained after splitting the data based on cloud conditions.
+  	- `data_central_train_nonan.pkl` contains the prepared dataset with NaN values removed.
 
