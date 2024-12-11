@@ -25,13 +25,15 @@ The proposed formulation is called the Sum-k formulation, which can be shown as
 ```
 where $w_{[i]}$ is the $i^{\mathrm{th}}$ largest PI width element, with $w_{[1]} \geq w_{[2]} \geq \cdots \geq w_{[N]}$.
 
-An example of the PI characteristics of the Sum-k formulation on synthetic data is illustrated below.
-<p align="center">
-  <img src="piresult_example.png" alt="The example of the PI result" width="600">
-</p>
+## Forecasting specification
+We aim to deliver the one-hour-ahead solar irradiance forecast PI from 07:00 to 17:00 with a
+confidence level of 0.9 at a 15-minute resolution, corresponding to 4 lead times. This forecasted PI indicates the uncertainty
+in solar energy, assisting system operators in decision-making for better reserve preparation and generation planning.
 
-## Quick start
-A simple example of the PI construction utilizing our formulation is presented in [**demo.ipynb**](./demo.ipynb).
+An example of the timeseries plot of PI from the Sum-k formulation is illustrated below.
+<p align="center">
+  <img src="piplot_sepsky_solar_comparison_worstqdcondwithlstm.png" alt="A comparison of 15-minute ahead PI forecast of solar irradiance between Sum-k and QD" width="600">
+</p>
 
 ## Repository
 This repository is structured as follows:
@@ -52,7 +54,8 @@ This repository is structured as follows:
 	- `formulation.py` consists of all loss functions used in this study, including our formulation.
 	- `networks.py` consists of a neural network model structure
 	- `trainer.py` includes a training algorithm, evaluation metrics calculation, and result plots generation.
-- `experiment` includes all experiment corresponding codes and datasets utilized in Section 5 of the article. The experiment is divided into two experiments:
-	- [**pi_characteristics**](./experiment/pi_characteristics) explores the trade-off curve between PICP and PI width as described in Section 4.3.1 and the results presented in Section 5 of the article.
- 	- [**benchmark**](./experiment/benchmark) compares the performance metrics and PI width histogram from every method as described in Section 4.3.2, with the results presented in Section 5 of the article.
+- `experiment` includes all experiment corresponding codes and datasets utilized in Section 6 of the article.
 - The `paper_figure` folder contains the figures used in this article along with the code for generating them ([**visualization.ipynb**](./paper_figure/visualization.ipynb)).
+- `data` folder consists of the dataset using in the experiment as  .csv and .pkl format.
+	- [**preprocessing.ipynb**](./data/preprocessing.ipynb)) 
+
