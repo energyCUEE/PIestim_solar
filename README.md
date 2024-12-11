@@ -32,7 +32,7 @@ in solar energy, assisting system operators in decision-making for better reserv
 
 An example of the timeseries plot of PI from the Sum-k formulation is illustrated below.
 <p align="center">
-  <img src="piplot_sepsky_solar_comparison_worstqdcondwithlstm.png" alt="A comparison of 15-minute ahead PI forecast of solar irradiance between Sum-k and QD" width="600">
+  <img src="piplot_sepsky_solar_comparison_worstqdcondwithlstm.png" alt="A comparison of 15-minute ahead PI forecast of solar irradiance between Sum-k and QD" width="1000">
 </p>
 
 ## Repository
