@@ -1,5 +1,5 @@
 # Large width penalization for neural network-based prediction interval estimation
-This GitHub repository contains the code used for the synthetic data experiments described in the article "Large Width Penalization for Neural Network-Based Prediction Interval Estimation."
+This GitHub repository contains the code used for the solar data experiments described in the article "Large Width Penalization for Neural Network-Based Prediction Interval Estimation."
 ## Citation
 ```
 Will be added later
